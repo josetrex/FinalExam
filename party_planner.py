@@ -1,4 +1,6 @@
 import cgi
+import cgitb
+cgitb.enable()  
 
 party_items = {
     0: ("Cake", 20),
@@ -48,7 +50,6 @@ elif base_code > 5:
     message = "Let's keep it classy!"
 else:
     message = "Chill vibes only!"
-
 
 print("Content-Type: text/html\n")
 print("<html><head><title>Digital Party Planner</title></head><body>")
